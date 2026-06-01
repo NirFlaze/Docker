@@ -66,6 +66,6 @@ jobs:
           podman run -d \
             --name users-api \
             --network host \
-            -e DATABASE_URL=postgresql+psycopg://kubsu:kubsu@127.0.0.1:5432/kubsu \
+            -e DATABASE_URL=postgresql+psycopg://kubsu:kubsu@127.0.0.1:5433/kubsu \
             ${{ env.IMAGE_NAME }}:latest
 
